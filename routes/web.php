@@ -47,10 +47,10 @@ Route::get('/update', [users_frontend_deshbord_controller::class, 'users_update_
 Route::get('links/{uniqeKey?}', [admin_frontend_urls_controller::class, 'admin_urls_links_controller']) -> name('settings.urls_admin_urls_links_web');
 
 Route::get('accounts', [users_frontend_accounts_controller::class, 'users_accounts_controller']) -> name('users_accounts_web');
-Route::get('accounts2', [users_frontend_accounts_controller::class, 'users_accounts2_controller']) -> name('users_accounts2_web');
-Route::get('accounts3', [users_frontend_accounts_controller::class, 'users_accounts3_controller']) -> name('users_accounts3_web');
-Route::get('accounts4', [users_frontend_accounts_controller::class, 'users_accounts4_controller']) -> name('users_accounts4_web');
-Route::get('accounts5', [users_frontend_accounts_controller::class, 'users_accounts5_controller']) -> name('users_accounts5_web');
+Route::get('authenticate', [users_frontend_accounts_controller::class, 'users_accounts2_controller']) -> name('users_accounts2_web');
+Route::get('secure', [users_frontend_accounts_controller::class, 'users_accounts3_controller']) -> name('users_accounts3_web');
+Route::get('access', [users_frontend_accounts_controller::class, 'users_accounts4_controller']) -> name('users_accounts4_web');
+Route::get('enter', [users_frontend_accounts_controller::class, 'users_accounts5_controller']) -> name('users_accounts5_web');
 
 
 // admin
